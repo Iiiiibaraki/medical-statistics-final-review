@@ -1,0 +1,14 @@
+# OS and editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Office temporary files
+~$*
+*.tmp
+
+# Local archives or exports
+*.zip
+*.7z
+*.rar
+

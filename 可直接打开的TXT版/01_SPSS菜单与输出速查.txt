@@ -2,37 +2,37 @@
 
 ## 数据录入先会这几件事
 
-变量视图：
+变量视图（Variable View）：
 
-- Name：变量名，只用英文或拼音，不能有空格。
-- Type：类型，一般用 Numeric。
-- Label：变量说明，可以写中文，如“治疗前血压”。
-- Values：分类变量的编码说明，如 1=男，2=女；1=治疗组，2=对照组。
-- Measure：计量资料选 Scale；无序分类选 Nominal；等级资料选 Ordinal。
+- 名称（Name）：变量名，只用英文或拼音，不能有空格。
+- 类型（Type）：类型，一般用数值 Numeric。
+- 标签（Label）：变量说明，可以写中文，如“治疗前血压”。
+- 值（Values）：分类变量的编码说明，如 1=男，2=女；1=治疗组，2=对照组。
+- 测量（Measure）：计量资料选标度 Scale；无序分类选名义 Nominal；等级资料选有序 Ordinal。
 
-数据视图：
+数据视图（Data View）：
 
 - 一行代表一个研究对象。
 - 一列代表一个变量。
 - 分组变量用数字编码，再在 Values 里解释。
 
-## 常用菜单
+## 常用菜单（中文在前，英文对照）
 
-| 任务 | SPSS菜单 | 主要输出 | 看哪里 |
+| 任务 | 中文菜单 | 英文菜单 | 主要输出 | 看哪里 |
 |---|---|---|---|
-| 计量资料描述 | Analyze > Descriptive Statistics > Explore | Descriptives、Tests of Normality | 均数、标准差、中位数、Shapiro-Wilk |
-| 频数/构成比 | Analyze > Descriptive Statistics > Frequencies | Frequency Table | 频数、百分比 |
-| 单样本t检验 | Analyze > Compare Means > One-Sample T Test | One-Sample Test | Sig.(2-tailed) |
-| 配对t检验 | Analyze > Compare Means > Paired-Samples T Test | Paired Samples Test | Sig.(2-tailed) |
-| 独立样本t检验 | Analyze > Compare Means > Independent-Samples T Test | Independent Samples Test | 先Levene，再Sig.(2-tailed) |
-| 单因素方差分析 | Analyze > Compare Means > One-Way ANOVA | ANOVA | Sig. |
-| 多因素方差分析 | Analyze > General Linear Model > Univariate | Tests of Between-Subjects Effects | 每个因素对应Sig. |
-| χ²检验 | Analyze > Descriptive Statistics > Crosstabs | Chi-Square Tests | Pearson Chi-Square |
-| 非参数检验 | Analyze > Nonparametric Tests > Legacy Dialogs | Test Statistics | Asymp. Sig. |
-| 相关分析 | Analyze > Correlate > Bivariate | Correlations | Pearson Correlation、Sig. |
-| 线性回归 | Analyze > Regression > Linear | Model Summary、ANOVA、Coefficients | R²、模型P、B和P |
-| Logistic回归 | Analyze > Regression > Binary Logistic | Variables in the Equation | B、Sig.、Exp(B) |
-| 作图 | Graphs > Chart Builder | 图形 | 图形类型是否匹配资料 |
+| 计量资料描述 | 分析 > 描述统计 > 探索 | Analyze > Descriptive Statistics > Explore | 描述（Descriptives）、正态性检验（Tests of Normality） | 均数、标准差、中位数、Shapiro-Wilk |
+| 频数/构成比 | 分析 > 描述统计 > 频率 | Analyze > Descriptive Statistics > Frequencies | 频率表（Frequency Table） | 频数、百分比 |
+| 单样本t检验 | 分析 > 比较均值 > 单样本 T 检验 | Analyze > Compare Means > One-Sample T Test | 单样本检验（One-Sample Test） | Sig.(2-tailed) / 双侧显著性 |
+| 配对t检验 | 分析 > 比较均值 > 配对样本 T 检验 | Analyze > Compare Means > Paired-Samples T Test | 配对样本检验（Paired Samples Test） | Sig.(2-tailed) / 双侧显著性 |
+| 独立样本t检验 | 分析 > 比较均值 > 独立样本 T 检验 | Analyze > Compare Means > Independent-Samples T Test | 独立样本检验（Independent Samples Test） | 先看 Levene，再看 Sig.(2-tailed) |
+| 单因素方差分析 | 分析 > 比较均值 > 单因素 ANOVA | Analyze > Compare Means > One-Way ANOVA | ANOVA | Sig. / 显著性 |
+| 多因素方差分析 | 分析 > 一般线性模型 > 单变量 | Analyze > General Linear Model > Univariate | 主体间效应检验（Tests of Between-Subjects Effects） | 每个因素对应 Sig. |
+| χ²检验 | 分析 > 描述统计 > 交叉表 | Analyze > Descriptive Statistics > Crosstabs | 卡方检验（Chi-Square Tests） | Pearson Chi-Square |
+| 非参数检验 | 分析 > 非参数检验 > 旧对话框 | Analyze > Nonparametric Tests > Legacy Dialogs | 检验统计量（Test Statistics） | Asymp. Sig. / 渐近显著性 |
+| 相关分析 | 分析 > 相关 > 双变量 | Analyze > Correlate > Bivariate | 相关性（Correlations） | Pearson Correlation、Sig. |
+| 线性回归 | 分析 > 回归 > 线性 | Analyze > Regression > Linear | 模型摘要、ANOVA、系数（Model Summary、ANOVA、Coefficients） | R²、模型P、B和P |
+| Logistic回归 | 分析 > 回归 > 二元 Logistic | Analyze > Regression > Binary Logistic | 方程中的变量（Variables in the Equation） | B、Sig.、Exp(B) |
+| 作图 | 图形 > 图表构建器 | Graphs > Chart Builder | 图形 | 图形类型是否匹配资料 |
 
 ## 输出怎么看
 
@@ -67,4 +67,3 @@
 1. Variables in the Equation：看 B、Sig.、Exp(B)。
 2. Exp(B) 就是 OR。
 3. β>0 时 OR>1；β<0 时 OR<1。
-

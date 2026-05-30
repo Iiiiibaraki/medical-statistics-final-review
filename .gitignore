@@ -12,3 +12,5 @@ desktop.ini
 *.7z
 *.rar
 
+# R session history
+.Rhistory
